@@ -1,0 +1,59 @@
+<header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container ">
+      <a class="navbar-brand" href="index.html">
+        <span>
+          AEK-BOOT
+        </span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=""> </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="home" fragment="about_section"> Set Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="home" fragment="service_section">Log Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<body>
+    <div class="container">
+      <!-- App Header -->
+      <header class="app-header">
+        <h1 class="heading">Hello, there</h1>
+        <h4 class="sub-heading">How can I help you today?</h4>
+      </header>
+
+      <!-- Chats -->
+      <div class="chats-container"></div>
+      <!-- Prompt Input -->
+      <div class="prompt-container">
+        <div class="prompt-wrapper">
+          <form action="#" class="prompt-form">
+            <input type="text" placeholder="Ask me" class="prompt-input" required />
+            <div class="prompt-actions">
+              <!-- File Upload Wrapper -->
+              <div class="file-upload-wrapper">
+                <button id="add-file-btn" type="button" class="material-symbols-rounded">send</button>
+              </div>
+            </div>
+          </form>
+          <!-- Theme and Delete Chats Buttons -->
+          
+          <button id="delete-chats-btn"></button>
+        </div>
+      </div>
+    </div>
+</body>
