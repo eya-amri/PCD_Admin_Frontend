@@ -24,7 +24,8 @@ export const routes: Routes = [
      { path:'login',component:LoginuserComponent},
      { path:'signup',component:SignupuserComponent},
      { path:'chatbot',component:ChatbotComponent},
-     { path:'setprofil',component:SetprofilComponent}
+     { path:'setprofil',component:SetprofilComponent},
+    
     
     
 ];

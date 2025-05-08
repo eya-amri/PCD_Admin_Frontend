@@ -24,9 +24,11 @@ export class AuthAdminComponent {
     console.log('Username:', this.username, 'Password:', this.password); 
     this.authService.login(this.username, this.password).subscribe(
       (response) => {
-        if (response.status === 'success') {
+        console.log('Réponse backend:', response);
+        if (response?.status === 'success') {
+          alert('Félicitations. Authentification réussie.');
           // Si la connexion est réussie, rediriger vers le dashboard
-          this.router.navigate(['admin/dashboard']);
+          this.router.navigate(['admin/dashbord']);
         } else {
           // Si la connexion échoue, afficher un message d'erreur
           alert(response.message);
